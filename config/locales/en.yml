@@ -1,0 +1,192 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  application_layout:
+    home_nav: "Home"
+    services_nav: "Services"
+    resources_nav: "Resources"
+    about_nav: "About"
+    contact_nav: "Contact"
+    testimonials_nav: "Testimonials"
+    privacy_policy_nav: 'Privacy Policy'
+    scroll_up: 'Click to return on the top page'
+    language_link_name: 'Versión en Español'
+    language_link_url: 'http://es.intaxinc.com'
+
+  home:
+    intro_h2: 'What We Do'
+    intro_p1: 'Taxes inc is a highly experienced accounting firm that has been serving
+               				the Miami area for over 13 years. We are committed to offering the highest
+               				quality accounting and income tax preparation services.'
+    intro_p2: 'We also offer professional and personalized tax guidance that is intended to save
+               				our clients time and money. Contact Us and schedule an appointment today, we will be
+               				glad to help you with any questions you may have.'
+
+    services_h2_1: 'Tax Preparation'
+    services_detail_p1: 'Taxes inc has years of tax experience in the preparation of individual, corporate, partnership, estate and gift, non-profit and fiduciary tax returns.'
+    services_h2_2: 'Bookkeeping'
+    services_book_p1: 'We handle bookkeeping and payroll for your business.'
+    services_h2_3: 'Notary'
+    services_notary_p1: 'As notaries we can officially witness signatures on legal documents.'
+    services_h2_4: 'Translations'
+    services_translate_p1: 'Taxes inc provides translations on a variety of legal documents.'
+    services_h2_5: 'Immigration'
+    services_immigration_p1: 'At Taxes inc we can help you with immigration services, we can prepare a list of documents including passports.'
+    services_h2_6: 'Consulting'
+    services_consulting_p1: 'We provide consulting services.'
+    services_h2_7: 'New Businesses'
+    services_newbiz: 'Starting your own business? We can help you get started and create the type of business you need including LLC, C Corporation, S Corporations.'
+    services_learn_more: 'Learn More'
+
+    contact_us_h2: 'Contact Us'
+    contact_us_btn: 'Contact Us'
+
+  services:
+    title_h1: "Services"
+
+    menu1: 'Tax Preparations'
+    menu2: 'Immigration Services'
+    menu3: 'Consulting Services'
+    menu4: 'Bookkeeping'
+    menu5: 'Notary'
+    menu6: 'Translations'
+    menu7: 'New Business'
+    menu8: 'Financial Planning'
+
+    tax_preparation_h2: "Tax preparation"
+    tax_preparation_p1: "Tax preparations can be frustrating, confusing and often times you miss out on potential savings when preparing them on your own. We are up to date with the latest laws and regulations and have many years of experience handling individual and business tax preparations."
+    tax_preparation_p2: "Some of the services we provide for Individual and Businesses"
+    tax_preparation_ul1: '<li> Preparing Individual and Corporate Taxes</li>
+                                            <li> Preparing State Taxes </li>
+                                            <li> Tax Planning </li>
+                                            <li> Resolving IRS complications and issues.</li>'
+    bookkeeping_h2: "Bookkeeping"
+    bookkeeping_p1: "Small business owners have more important things to do than to keep their own books. You can get back to the job of running your business and generating profits and let us take care of the books for you."
+    bookkeeping_p2: "At Taxes inc, we make sure your payroll taxes and employees are paid on time."
+    bookkeeping_p3: "Some of our services include:"
+    bookkeeping_ul1: '<li>Transaction Input – We enter your transactions into your QuickBooks file on a monthly basis.</li>
+                      <li>Account Allocation – We assign all transactions to appropriate income and expense accounts.</li>
+                      <li>Bank Statement Reconciliation – Your bank statements can be mailed directly to us for reconciliation.</li>
+                      <li>Credit Card Statement Reconciliation – Your card statements can be mailed directly to us for reconciliation.</li>
+                      <li>Payroll – Manage your payroll and maintain your payroll records. As well as preparing and managing your required quarterly and annual filings.</li>
+                      <li>Year-End Reports – Provide you with information needed for you or us to prepare your taxes.</li>'
+    bookkeeping_p4: "Additionally, we provide payroll and sales tax compliance services including completion of forms such as 941’s, 940’s, UCT-6’s, 1099’s, W-3’s and W-2’s."
+
+    immigration_h2: "Immigration Services"
+    immigration_p1: "Not only do we provide tax services we also provide Immigration Services."
+    immigration_p2: "Some of the Immigration services we provide are:"
+    immigration_ul1: '<li> Passport </li>
+                      <li> Naturalization </li>
+                      <li> Family Reunification </li>
+                      <li> Employment Authorization </li>
+                      <li> Political Asylum </li>'
+
+    notary_h2: "Notary Services"
+    notary_p1: "A notary public acts as an impartial third-party witness to not only the signature of a document, but also that all parties who signed a document did so willingly and under their own free will."
+    notary_ul1: ' <li>Wills</li>
+                         <li>Trust</li>
+                         <li>Deeds</li>
+                         <li>Contracts</li>
+                         <li>Affidavits</li>'
+
+    consulting_h2: "Consulting Services"
+    consulting_p1: "Taxes inc's abilities are shaped by the needs of our clients and span strategic business and operations planning and general business advice. We provide expertise in business valuation and financing services."
+    consulting_ul1: '<li>Management consulting and financial information reporting design</li>
+                                     <li>Internal operation reviews</li>
+                                     <li>Profit improvement studies</li>
+                                     <li>Accounting software consulting</li>
+                                     <li>Business valuation and financial projections</li>
+                                     <li>Due Diligence and Transaction Services</li>
+                                     <li>Litigation Support</li>'
+
+    translations_h2: "Translations"
+    translations_p1: "Taxes inc provides translations services for many legal documents such as the following:"
+    translations_ul1: '<li> Birth Certificates </li>
+                       <li> Death Certificates </li>
+                       <li> Marriage </li>
+                       <li> Divorce </li>
+                       <li> and more </li>'
+
+    new_business_h2: "New Businesses"
+    new_business_p1: "When starting a new business it is difficult to determine what kind of business to create. We can form your corporation and provide you with the different options available to fit your needs."
+    new_business_p2: "It is important knowing the differences between types of corporations which is why we will help you understand what they mean and how they will benefit you differently."
+    new_business_p3: "Types of Businesses we create:"
+    new_business_ul1: '<li>LLC</li>
+                       <li>C Corporation</li>
+                       <li>S Corporation</li>'
+
+    financial_planning_h2: "Financial Planning"
+    financial_planning_p1: "For your financial planning needs be sure to visit <a href='http://www.amglegacyplanning.com'>AMG Legacy Planning</a>."
+
+  contact:
+    contact_h1: 'Contact'
+    form_company_name: 'Company Name'
+    form_comments: 'Comments'
+    form_firstname: 'First Name'
+    form_lastname: 'Last Name'
+    form_phone: 'Phone'
+    form_email: 'Email'
+    form_message: 'Message'
+    form_submit: 'Send'
+
+  resources:
+    rtitle: 'Resources'
+    menur1: 'IRS Publications'
+    menur2: 'Individual Tax Forms'
+    menur3: 'Business Tax Forms'
+    menur4: 'Organizers'
+    menur5: 'Tax Tools'
+    menur6: 'Calculators'
+    publications_view_path: '/main/resources/english_publications'
+    individual_tax_form_view_path: '/main/resources/english_individual_tax'
+    busines_tax_form_view_path: '/main/resources/english_business_tax'   
+    organizer_row1a: 'Personal and Individual'
+    organizer_row1b: 'Description about personal and individual organizers'
+    organizer_row2a: 'Airline Industry Organizer'
+    organizer_row2b: 'Complete Form W-4 so that your employer can withhold the correct federal income tax from your pay.'     
+    taxtools_row1a: 'Tax Due Dates Publication'
+    taxtools_row1b: 'This link provides all the due dates from IRS.'  
+    taxtools_row2a: 'Track Your Taxes'
+    taxtools_row2b: 'Track the status of your return.'  
+    taxtools_row3a: 'Paying IRS'
+    taxtools_row3b: 'Payments can be made through IRS website.'
+    calculators: 'One of our partners at AMG Legacy Planning has put together list of useful tools for tax and financial planning. Feel free to use those calculators: '
+
+  about:
+    atitle: 'About Us'    
+    amain_p: 'Taxes inc. has been around since 1998 and have been providing professional services through all states of the USA.
+      We are accredited by the BBB and have always had excellent credibility with zero complaints; we currently have over 1100 active clients and have served hundreds more through the years.'
+
+  testimonials:
+    ttitle: 'Testimonials'
+
+  payment:
+    payment_h2: 'Make a Payment'
+    service_type_title: 'Service Type'
+    payment: 'Payment'
+    select_one: 'Select One'
+    corp_taxes: 'CORPORATION TAXES'
+    personal_taxes: 'PERSONAL TAXES'
+    accounting_services: 'ACCOUNTING SERVICES'
+    individual_forms: 'INDIVIDUAL FORMS SERVICES'
+    full_name: 'Full Name'
+    phone_number: 'Phone Number'

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= yield :page_title %>
+  <% stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application' %>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+      <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/business-frontpage.css" rel="stylesheet">
+  <%= csrf_meta_tags %>
+
+  <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.cycle.all.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+  
+
+</head>
+<body>
+ <!-- Navigation -->
+	<nav class="home-navigation navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="font-size:15px;" href="<%= t('application_layout.language_link_url') %>"><%= t('application_layout.language_link_name') %></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+					<li>
+                      <a href="/"><%= t('application_layout.home_nav') %></a>
+                    </li>
+					<li>
+                      <a href="/services"><%= t('application_layout.services_nav') %></a>
+                    </li>
+					<li>
+                      <a href="/resources"><%= t('application_layout.resources_nav') %></a>
+                    </li>
+                    <li>
+                      <a href="/about"><%= t('application_layout.about_nav') %></a>
+                    </li>
+                    <li>
+                      <a href="/contact"><%= t('application_layout.contact_nav') %></a>
+                    </li>
+                    <li>
+                      <a href="/testimonials"><%= t('application_layout.testimonials_nav') %></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+ <div class="hidden parallax-header">
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-12">
+         <a href="/"><img style="float:left; opacity:.9 !important;" class="logo" width="270" src="images/iti_logo3.png" /></a>
+
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <header style="" class="business-header bgM">
+	<!--<img class="cycling-header" src="/images/globe-791596_1920.jpg" style="width: 100%; position: absolute;" />	-->
+		<div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+				<a href="/"><img class="logo" width="270" src="images/iti_logo3.png" /></a>
+              
+                </div>
+            </div>
+        </div>
+    </header>
+<%= yield %>
+
+ <!-- Footer -->
+        <section class="col-sm-12 footer_section">
+            <div class="row">
+				<div class="col-lg-12">
+					<img style="padding-bottom:10px;" src="images/bbb_logo.png" />	
+				</div>
+				
+				<br>
+                 <div class="col-lg-12">
+					<a href="https://www.facebook.com/internationaltaxesinc"><img style="height:50px;" src="/images/fb.png" /></a>
+                    <a href="https://www.linkedin.com/in/jose-moldes-3b304963"><img style="height:50px;" size="100" src="/images/linkedin.png" /></a>
+                    <a href="https://www.twitter.com/MoldesJ"><img style="height:50px;" size="100" src="/images/twitter.png" /></a>
+                </div>
+                <div class="col-lg-12">
+				<a href="/"><%= t('application_layout.home_nav') %></a> | <a href="/services"><%= t('application_layout.services_nav') %></a> | <a href="/resources"><%= t('application_layout.resources_nav') %></a> | <a href="/contact"><%= t('application_layout.contact_nav') %></a> | <a href="/privacy_policy"><%= t('application_layout.privacy_policy_nav') %></a> | <a href="/testimonials"><%= t('application_layout.testimonials_nav') %></a>
+                    <p>Copyright &copy;2016 Taxes inc</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </section>
+
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title='<%= t('application_layout.scroll_up') %>' data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+<script>
+$(document).ready(function() {
+
+    function changeBackground(){
+        var index = imageIndex++ % imagesArray.length;
+        $(".business-header").css("background","url('"+ imagesArray[index] +"') center center no-repeat scroll")
+        //$(".cycling-header").attr("src", imagesArray[index].toString() );
+
+        $(".business-header").css("background-size","100%");
+        
+         $(".business-header").css("transition","background 1s linear;");
+    }
+
+    var imageIndex = 0;
+    var imagesArray = [
+       "images/header1.jpg",
+        "images/globe-791596_1920.jpg",
+        "images/clock-1274699_1920.jpg"
+    ];
+    if (typeof timer !== 'undefined'){
+        clearInterval(timer);   
+    }
+
+    timer = setInterval(changeBackground, 4000);
+    //console.log(timer);
+
+    $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+
+    // scroll body to 0px on click
+    $('#back-to-top').click(function () {
+        $('#back-to-top').tooltip('hide');
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+
+    $('#back-to-top').tooltip('show');
+});
+</script>
+</body>
+</html>

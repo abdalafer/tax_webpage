@@ -1,0 +1,188 @@
+<% content_for :page_title do %>
+    <title>Taxes inc - Home</title>
+<% end %>
+
+<!-- Page Content -->
+
+
+<section class="what-we-do-section light_section">
+  <div class="what-we-do col-sm-12">
+    <div class="what-we-do-wrapper">
+
+      <h2> <%= t('home.intro_h2') %></h2>
+
+      <p><%= t('home.intro_p1') %></p>
+
+      <p><%= t('home.intro_p2') %></p>
+
+      <div class="what-we-do-list col-sm-6">
+        <a class="home-call-button btn btn-default btn-lg" href="tel:+13052292710"><span class="glyphicon glyphicon-earphone" style="color:#5cb85c" aria-hidden="true"></span>
+          000-000-0000</a>
+      </div>
+
+      <div class="what-we-do-list col-sm-6">
+        <a href="/contact" class="home-email-button btn btn-default btn-lg" href="#"><span class="glyphicon glyphicon glyphicon glyphicon-envelope" style="color:#5cb85c" aria-hidden="true"></span>
+          <%= t('home.contact_us_btn') %>
+        </a>
+      </div>
+    </div>
+    <hr>
+
+  </div>
+
+</section>
+
+<section>
+  <p style="color:white;">You can pay for services rendered by Taxes inc. </p>
+
+  <a href="/payment" class="btn btn-success">Pay a Service</a>
+</section>
+
+<!-- /.row -->
+<div class="parallax">
+
+</div>
+<section class="grey_section">
+  <div class="row services-home-section">
+    <div class="thumb col-sm-3">
+      <a href="/services#tax-preparations">
+        <img class=" img-responsive img-center" src="images/taxes-1027103_1920.jpg" alt="">
+      </a>
+
+      <h2 class="service_section_titles">
+        <%= t('home.services_h2_1') %>
+      </h2>
+
+      <p class="service_section_titles down_arrow">
+        <a href="/services#tax-preparations"><img src="images/downarrow.png"/></a></p>
+
+      <p class="service_details">
+        <%= t('home.services_detail_p1') %>
+        <br/>
+        <a class="btn btn-primary" href="/services#tax-preparations"><%= t('home.services_learn_more') %></a></p>
+    </div>
+    <div class="thumb col-sm-3">
+      <a href="/services#bookkeeping"><img class=" img-responsive img-center" src="images/calculator-1044173_1920.jpg" alt=""></a>
+
+      <h2 class="service_section_titles"><%= t('home.services_h2_2') %></h2>
+
+      <p class="service_section_titles down_arrow"><a href="/services#bookkeeping"><img src="images/downarrow.png"/></a>
+      </p>
+
+      <p class="service_details"><%= t('home.services_book_p1') %> <br/>
+        <a class="btn btn-primary" href="/services#bookkeeping"><%= t('home.services_learn_more') %></a></p>
+    </div>
+    <div class="thumb col-sm-3">
+      <a href="/services#notary"><img class=" img-responsive img-center" src="images/stamp-1415724_1280.jpg" alt=""></a>
+
+      <h2 class="service_section_titles"><%= t('home.services_h2_3') %></h2>
+
+      <p class="service_section_titles down_arrow"><a href="/services#notary"><img src="images/downarrow.png"/></a></p>
+
+      <p class="service_details"><%= t('home.services_notary_p1') %><br/>
+        <a class="btn btn-primary" href="/services#notary"><%= t('home.services_learn_more') %></a>
+      </p>
+    </div>
+    <div class="thumb col-sm-3">
+      <a href="/services#translations"><img class="img-responsive img-center" src="images/spanish-375830_1280.jpg" alt=""></a>
+
+      <h2 class="service_section_titles"><%= t('home.services_h2_4') %></h2>
+
+      <p class="service_section_titles down_arrow">
+        <a href="/services#translations"><img src="images/downarrow.png"/></a></p>
+
+      <p class="service_details"><%= t('home.services_translate_p1') %><br/>
+        <a class="btn btn-primary" href="/services#translations"><%= t('home.services_learn_more') %></a></p>
+    </div>
+    <div class="thumb col-sm-3">
+      <a href="/services#immigration"><img class="img-responsive img-center" src="images/immigration.jpg" alt=""></a>
+
+      <h2 class="service_section_titles"><%= t('home.services_h2_5') %></h2>
+
+      <p class="service_section_titles down_arrow"><a href="/services#immigration"><img src="images/downarrow.png"/></a>
+      </p>
+
+      <p class="service_details"><%= t('home.services_immigration_p1') %> <br/>
+        <a class="btn btn-primary" href="/services#immigration"><%= t('home.services_learn_more') %></a>
+      </p>
+    </div>
+    <div class="thumb col-sm-3">
+      <a href="/services#consulting"><img class="img-responsive img-center" src="images/consulting.jpg" alt=""></a>
+
+      <h2 class="service_section_titles"><%= t('home.services_h2_6') %></h2>
+
+      <p class="service_section_titles down_arrow"><a href="/services#consulting"><img src="images/downarrow.png"/></a>
+      </p>
+
+      <p class="service_details"><%= t('home.services_consulting_p1') %><br/>
+        <a class="btn btn-primary" href="/services#consulting"><%= t('home.services_learn_more') %></a>
+      </p>
+    </div>
+    <div class="thumb col-sm-3">
+      <a href="/services#new_business"><img class="img-responsive img-center" src="images/entrepreneur-1426333_640.jpg" alt=""></a>
+
+      <h2 class="service_section_titles"><%= t('home.services_h2_7') %></h2>
+
+      <p class="service_section_titles down_arrow"><a href="/services#consulting"><img src="images/downarrow.png"/></a>
+      </p>
+
+      <p class="service_details"><%= t('home.services_newbiz') %><br/>
+        <a class="btn btn-primary" href="/services#new_business"><%= t('home.services_learn_more') %></a>
+      </p>
+    </div>
+  </div>
+</section>
+<!-- /.row -->
+<div class="parallax">
+
+</div>
+<section class="contact_us_home_section light_section">
+  <h2><%= t('home.contact_us_h2') %></h2>
+
+  <div class="what-we-do-list col-sm-6">
+    <address>
+      <strong>Taxes inc</strong>
+      <br>11 nw 1 ct
+      <br>Miami , FL 00000
+      <br>
+    </address>
+  </div>
+
+  <div class="what-we-do-list col-sm-6">
+    <address>
+      <abbr title="Phone">P:</abbr>000-000-0000
+      <br>
+      <abbr title="Email">F:</abbr>000-000-0000
+      <br>
+      <abbr title="Email">E:</abbr> <a href="mailto:#"></a>
+    </address>
+  </div>
+
+  <div class="col-sm-12">
+    <hr>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.6721946467915!2d-80.41586655013187!3d25.781388913998885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9be570f709f79%3A0x9c74854915d92020!2s1125+NW+135th+Ct%2C+Miami%2C+FL+00000!5e0!3m2!1sen!2sus!4v1472244261927" width="100%" height="100%" frameborder="" style="margin-bottom:30px; height: 250px; border:2px solid" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- /.container -->
+<script>
+
+
+    $('.service_details').hide();
+    $('.services-home-section .thumb').hover(function () {
+        $('.service_details').hide();
+        $(this).children('.service_section_titles').hide();
+        //$(this).children('img').hide(500);
+        $(this).children('.service_details').fadeIn(500, function () {
+            //$('.services-home-section .col-md-2').children('.demo_details:visible').hide();
+            //$(this).show();
+        });
+    });
+    $('.services-home-section .thumb').mouseleave(function () {
+        $('.service_details').hide();
+        $('.service_details').stop(false, true).hide();
+        $(this).children('.service_section_titles').show();
+        //$(this).children('img').show(500);
+    });
+
+</script>

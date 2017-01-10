@@ -1,0 +1,188 @@
+<% content_for :page_title do %>
+    <title>Taxes inc - Services</title>
+<% end %>
+<div class="services-page">
+  <section class="">
+    <div class="col-sm-12">
+
+      <ul class=" menu services-links nav nav-links  nav-justified">
+        <li class="list-group-item">
+          <img style="width:20px;" src="images/home-services-icons/school-1555910_960_720.png"><a href="#tax-preparations"><%= t('services.menu1') %></a>
+        </li>
+        <li class="list-group-item">
+          <img style="width:35px;" src="images/home-services-icons/passport-159592_960_720.png"><a href="#immigration"><%= t('services.menu2') %></a>
+        </li>
+        <li class="list-group-item"><img style="width:30px;" src="images/home-services-icons/dialog-148815_960_720.png"><a href="#consulting"><%= t('services.menu3') %></a>
+        </li>
+        <li class="list-group-item">
+          <img style="width:30px;" src="images/home-services-icons/ad-1294301_960_720.png"><a href="#bookkeeping"><%= t('services.menu4') %></a>
+        </li>
+        <li class="list-group-item">
+          <img style="width:20px;" src="images/home-services-icons/stamp-156014_960_720.png"><a href="#notary"><%= t('services.menu5') %></a>
+        </li>
+        <li class="list-group-item">
+          <img style="width:20px;" src="images/home-services-icons/book-158110_960_720.png"><a href="#translations"><%= t('services.menu6') %></a>
+        </li>
+        <li class="list-group-item">
+          <img style="width:26px;" src="images/home-services-icons/customer-service-1433641_640.png"><a href="#new_business"><%= t('services.menu7') %></a>
+        </li>
+        <li class="list-group-item">
+          <img style="width:26px;" src="images/home-services-icons/customer-service-1433641_640.png"><a href="#financial_planning"><%= t('services.menu8') %></a>
+        </li>
+      </ul>
+      <h1> <%= t('services.title_h1') %></h1>
+    </div>
+
+  </section>
+  <hr>
+  <section class="" id="tax-preparations">
+    <div class=" col-sm-4">
+      <h2> <%= t('services.tax_preparation_h2') %></h2>
+
+    </div>
+    <div class=" col-sm-8">
+      <p><%= t('services.tax_preparation_p1') %> </p>
+
+      <p> <%= t('services.tax_preparation_p2') %></p>
+      <ul style="text-align:left;"><%= t('services.tax_preparation_ul1').html_safe %></ul>
+    </div>
+  </section>
+  <hr>
+  <section class="" id="bookkeeping">
+    <div class=" col-sm-4">
+      <h2 id=""><%= t('services.bookkeeping_h2') %></h2>
+    </div>
+    <div class=" col-sm-8">
+      <p>
+        <%= t('services.bookkeeping_p1') %>
+      </p>
+
+      <p>
+        <%= t('services.bookkeeping_p2') %>
+      </p>
+
+      <ul style="text-align:left;">
+        <%= t('services.bookkeeping_ul1').html_safe %>
+      </ul>
+
+      <p><%= t('services.bookkeeping_p4') %></p>
+
+    </div>
+
+  </section>
+  <hr>
+  <section class="" id="immigration">
+    <div class=" col-sm-4">
+      <h2><%= t('services.immigration_h2') %></h2>
+    </div>
+    <div class=" col-sm-8">
+      <p><%= t('services.immigration_p1') %></p>
+
+      <p><%= t('services.immigration_p2') %></p>
+      <ul style="text-align:left;">
+        <%= t('services.immigration_ul1').html_safe %>
+      </ul>
+    </div>
+  </section>
+  <hr>
+  <section class="" id="notary">
+    <div class=" col-sm-4">
+      <h2><%= t('services.notary_h2') %></h2>
+    </div>
+    <div class=" col-sm-8">
+      <p><%= t('services.notary_p1') %></p>
+      <ul style="text-align:left;">
+        <%= t('services.notary_ul1').html_safe %>
+      </ul>
+    </div>
+
+  </section>
+  <hr>
+  <section class="" id="consulting">
+    <div class=" col-sm-4">
+      <h2><%= t('services.consulting_h2') %></h2>
+    </div>
+    <div class=" col-sm-8">
+      <p><%= t('services.consulting_p1') %></p>
+      <ul style="text-align:left;">
+        <%= t('services.consulting_ul1').html_safe %>
+      </ul>
+    </div>
+  </section>
+  <hr>
+  <section class="" id="translations">
+    <div class=" col-sm-4">
+      <h2><%= t('services.translations_h2') %></h2>
+    </div>
+    <div class=" col-sm-8">
+      <p><%= t('services.translations_p1') %></p>
+      <ul style="text-align:left;">
+        <%= t('services.translations_ul1').html_safe %>
+      </ul>
+    </div>
+
+  </section>
+  <hr>
+  <section class="" id="new_business">
+    <div class=" col-sm-4">
+      <h2><%= t('services.new_business_h2') %></h2>
+    </div>
+    <div class=" col-sm-8">
+      <p><%= t('services.new_business_p1') %></p>
+
+      <p><%= t('services.new_business_p2') %></p>
+
+      <p><%= t('services.new_business_p3') %></p>
+      <ul style="text-align:left;">
+        <%= t('services.new_business_ul1').html_safe %>
+      </ul>
+
+    </div>
+
+  </section>
+<hr>
+  <section class="" id="financial_planning">
+    <div class=" col-sm-4">
+      <h2><%= t('services.financial_planning_h2') %></h2>
+    </div>
+    <div class=" col-sm-8">
+      <p><%= t('services.financial_planning_p1').html_safe %></p>
+    </div>
+
+  </section>
+</div>
+
+<script>
+    $(document).ready(function () {
+        var menu = $('.menu');
+        var origOffsetY = menu.offset().top + 50;
+
+        function scroll() {
+            if ($(window).scrollTop() >= origOffsetY) {
+                $('.menu').addClass('navbar-fixed-top');
+                $('.menu').addClass('sticky');
+                //$('.content').addClass('menu-padding');
+            } else {
+                $('.menu').removeClass('navbar-fixed-top');
+                $('.menu').removeClass('sticky');
+                //$('.content').removeClass('menu-padding');
+            }
+        }
+
+        document.onscroll = scroll;
+
+        scroll();
+        var nav_hahs = $(window.location.hash);
+        if (nav_hahs.length) {
+            window.scroll(0, $(window.location.hash)[0].offsetTop - 150);
+        }
+
+        $('.services-links li>a').on('click', function (e) {
+            e.preventDefault();
+            var clicked_hash = this.href.substring(this.href.indexOf("#") + 1);
+            window.scroll(0, document.getElementById(clicked_hash).offsetTop - 200);
+        });
+
+
+    });
+</script>

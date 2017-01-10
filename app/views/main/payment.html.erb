@@ -1,0 +1,45 @@
+<% content_for :page_title do %>
+    <title>Taxes inc - <%= t('payment.payment') %></title>
+<% end %>
+
+<section class="grey_section">
+    <h1 style="text-align:center;"><%= t('payment.payment_h2') %></h1>
+    <hr/>
+    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 form-group">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="62XJ4Q3WTARDE">
+        <input type="hidden" name="on0" value="Service Type">
+
+        <%= t('payment.service_type_title') %>
+
+        <select class="payment_required_type form-control" name="os0">
+          <option value="">(<%= t('payment.select_one') %>)</option>
+          <option value="CORPORATION TAXES"><%= t('payment.corp_taxes') %></option>
+          <option value="PERSONAL TAXES"><%= t('payment.personal_taxes') %></option>
+          <option value="ACCOUNTING SERVICES"><%= t('payment.accounting_services') %></option>
+          <option value="INDIVIDUAL FORMS  SERVICES"><%= t('payment.individual_forms') %></option>
+        </select>
+
+        <input type="hidden" name="on1" value="Full Name">
+        <%= t('payment.full_name') %>
+        <input class="payment_required_name form-control" type="text" name="os1" maxlength="200">
+        <input type="hidden" name="on2" value="Phone Number">
+        <%= t('payment.phone_number') %>
+        <input class="payment_required_phone form-control" type="text" name="os2" maxlength="200">
+
+        <br/>
+
+        <input class="payment_submit" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+</section>
+<script>
+
+    $('.payment_submit').on('click', function(e){
+        if (($('.payment_required_type').val() == "") || ($('.payment_required_name').val() == "") || ($('.payment_required_phone').val() == "") || ($('.payment_required_field').val() == "")){
+            e.preventDefault();
+        }
+    })
+</script>

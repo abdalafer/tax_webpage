@@ -1,0 +1,196 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+es:
+  application_layout:
+    home_nav: "Comienzo"
+    services_nav: "Servicios"
+    resources_nav: "Recursos"
+    about_nav: "Acerca"
+    contact_nav: "Contacto"
+    testimonials_nav: "Testimonios"
+    privacy_policy_nav: 'Poliza de Privacidad'
+    scroll_up: 'Regresa al comienzo de la página'
+    language_link_name: 'English Version'
+    language_link_url: 'http://www.intaxinc.com'
+
+  home:
+    intro_h2: 'Que Hacemos Nosotros'
+    intro_p1: 'International Taxes, Inc. Es una firma de contabilidad considerablemente experimentada, que brinda
+               sus servicios en el área de Miami desde hace más de 13 años. Nosotros tenemos el compromiso de
+               ofrecer la más alta calidad de servicios de contabilidad e impuestos sobre ingresos.'
+    intro_p2: 'También ofrecemos una guía profesional y personalizada sobre impuestos, dirigida a ahorrarle
+               tiempo y dinero a nuestros clientes. Comuníquese con nosotros para programar una cita, hoy. Será
+               nuestra satisfacción ayudarlo desde una simple pregunta hasta la formación y administración de su
+               negocio.'
+
+    services_h2_1: 'Preparación de Impuestos'
+    services_detail_p1: 'Taxes inc. tiene años de experiencia en la preparación de devolución de impuestos personales, corporativos, de sociedades, herencias, obsequios, no lucrativos, y fiduciarios.'
+    services_h2_2: 'Contabilidad'
+    services_book_p1: 'Nos ocupamos de la contabilidad, y el procesamiento de la nómina de su negocio.'
+    services_h2_3: 'Notarización'
+    services_notary_p1: 'Como notarios oficialmente testificamos firmas de documentos legales.'
+    services_h2_4: 'Traducciones'
+    services_translate_p1: 'Taxes inc. provee traducciones en una variedad de documentos legales.'
+    services_h2_5: 'Inmigración'
+    services_immigration_p1: 'Taxes inc. le brinda servicios de preparación de documentos de inmigración incluyendo pasaportes..'
+    services_h2_6: 'Cosultoría'
+    services_consulting_p1: 'Proveemos servicios de consultoría empresarial y financiera.'
+    services_h2_7: 'Nuevos negocios'
+    services_newbiz: '¿Comenzando un nuevo negocio? Lo ayudamos a comenzar y crear el tipo de organización que necesita, incluyendo LLC, C Corporation, S Corporations.'
+    services_learn_more: 'Aprenda Más'
+
+    contact_us_h2: 'Contactenos'
+    contact_us_btn: 'Contactenos'
+
+  services:
+    title_h1: "Servicios"
+
+    menu1: 'Preparación de Impuestos'
+    menu2: 'Inmigración'
+    menu3: 'Consultoría'
+    menu4: 'Contabilidad'
+    menu5: 'Servicios Notariales'
+    menu6: 'Traducciones'
+    menu7: 'Nuevos Negocios'
+    menu8: 'Planificacion Financiera'
+
+
+    tax_preparation_h2: "Preparación de Impuestos"
+    tax_preparation_p1: "La preparación de impuestos puede ser frustante, confusa, y muchas veces pierde potenciales ahorros al prepararlos por su cuenta. Estamos al día con las últimas leyes y regulaciones, y muchos años de experiencia trabajando en la preparación de impuestos individuales y de negocios, lo que permitiría optimizar su dinero."
+    tax_preparation_p2: "Algunos de los servicios que brindamos para individuos y empresas son:"
+    tax_preparation_ul1: '<ul style="text-align:left;">
+                                            <li> Preparación de impuestos individuales y corporativos</li>
+                                            <li> Preparación de impuestos estatales </li>
+                                            <li> Planificación de impuestos </li>
+                                            <li> Solución de problemas relacionados al Servicio de Rentas Internas (IRS).</li>
+                                        </ul>'
+
+    bookkeeping_h2: "Contabilidad"
+    bookkeeping_p1: "Los propietarios de pequeñas empresas tienen cosas más importantes que hacer, para tener que mantener sus propios libros. Usted puede volver a la tarea de su negocio, para hacerlo generar más ganancias, y dejar que nos encarguemos de sus libros."
+    bookkeeping_p2: "En Taxes inc. nos aseguramos de que sus impuestos de nómina y el pago de sus empleados se efectúen en tiempo y forma"
+    bookkeeping_p3: "Algunos de nuestros servicios incluyen:"
+    bookkeeping_ul1: '<li>Registro de transacciones- Contabilizamos mensualmente sus transacciones en el sistema de contabilidad QuickBooks.</li>
+                      <li>Asignación de cuentas- asignamos todas las transacciones a las correspondientes cuentas de ingresos y gastos.</li>
+                      <li>Conciliación de estados de cuentas bancarias- sus estados de cuentas bancarias pueden enviarse directamente a nosotros para la conciliación.</li>
+                      <li>Conciliación de estados de tarjetas de créditos- sus estados de tarjetas pueden enviarse directamente a nosotros para la conciliación.</li>
+                      <li>Nómina- administramos y mantenemos los registros de nómina. Así como la preparación y gestión de sus requeridas presentaciones trimestrales y anuales</li>
+                      <li>Informes de fin de año- proporcionamos la información necesaria para que usted o nosotros preparemos su declaración de impuestos.</li>'
+    bookkeeping_p4: "Además, prestamos servicios de nómina y sobre el cumplimiento de impuestos sobre las ventas, incluyendo la preparación de los modelos 941’s, 940’s, UCT-6’s, 1099’s, W-3’s and W-2’s."
+    immigration_h2: "Servicios de Inmigración"
+    immigration_p1: "No sólo proporcionamos servicioss de impuestos; también ofrecemos servicios de inmigración."
+    immigration_p2: "Algunos de los servicios de inmigración que ofrecemos son:"
+    immigration_ul1: '<li> Pasaporte</li>
+                      <li> Naturalización</li>
+                      <li> Reunificación familiar</li>
+                      <li> Autorización de empleo </li>
+                      <li> Asilo político </li>'
+
+    notary_h2: "Servicios notariales"
+    notary_p1: "Un notario público actúa como un testigo imparcial, no sólo de la firma de un documento, sino también porque todas las partes que firman el mismo, lo hacen por su propia voluntad."
+    notary_ul1: ' <li>Testamentos</li>
+                  <li>Fideicomisos</li>
+                  <li>Transferencias de propiedad o derechos (Deed)</li>
+                  <li>Contratos</li>
+                  <li>Declaraciones juradas</li>'
+
+    consulting_h2: "Servicios de Consultoría"
+    consulting_p1: "En Taxes inc's Ofrecemos nuestra experiencia en valoración empresarial y servicios financieros."
+    consulting_ul1: '<li>Consultoría en administración y diseño de reportes sobre información financiera</li>
+                                     <li>Análisis de funcionamiento interno</li>
+                                     <li>Estudios para incremento de los ingresos</li>
+                                     <li>Consultoría sobre programas de contabilidad computarizados</li>
+									 <li>Valoración de negocios y proyecciones financieras</li>
+									 <li>Servicios de diligencia debida y transacciones</li> 
+                                     <li>Asistencia en litigios</li>'
+     
+    translations_h2: "Traducciones"
+    translations_p1: "En Taxes inc se ofrecen servicios de traducción de documentos legales tales como:"
+    translations_ul1: '<li> Certificados de nacimiento </li>
+                       <li> Certificados de defución </li>
+                       <li> Matrimonios </li>
+                       <li> Divorcios </li>
+                       <li> y más</li>'
+
+    new_business_h2: "Nuevos negocios"
+    new_business_p1: "Cuando se quiere comenzar un nuevo negocio es difícil determinar cual tipo de organización se debe crear. Nosotros podemos formar su empresa y ofrecerle las diferentes opciones disponibles que satisfagan sus necesidades"
+    new_business_p2: "Es importante conocer las diferencias entre los tipos de organizacions empresariales, cuáles son esas diferencias, y porque. Nosotros le ayudaremos a entender que significan y cuáles son los pros y los contras de cada una."
+    new_business_p3: "Tipos de empresas que creamos:"
+    new_business_ul1: '<li>LLC</li>
+                       <li>C Corporación</li>
+                       <li>S Corporación</li>'
+
+    financial_planning_h2: "Planificacion Financiera"
+    financial_planning_p1: "Para sus necesidades de planificación financiera no deje de visitar e <a href='http://www.amglegacyplanning.com'>AMG Legacy Planning</a>."
+
+  contact:
+    contact_h1: 'Contacto'
+    form_company_name: 'Nombre de Compañia'
+    form_comments: 'Comentarios'
+    form_firstname: 'Primer Nombre'
+    form_lastname: 'Apellido'
+    form_phone: 'Teléfono'
+    form_email: 'Email'
+    form_message: 'Mensaje'
+    form_submit: 'Envía'
+
+  resources:
+    rtitle: 'Recursos'
+    menur1: 'Publicaciones de IRS'
+    menur2: 'Formularios para Individuales'
+    menur3: 'Formularios de Negocios '
+    menur4: 'Organizadores'
+    menur5: 'Erramientas Fiscales' 
+    menur6: 'Calculadoras'
+    publications_view_path: '/main/resources/spanish_publications'
+    individual_tax_form_view_path: '/main/resources/spanish_individual_tax'    
+    busines_tax_form_view_path: '/main/resources/spanish_business_tax'
+    organizer_row1a: 'Personal e Individual'
+    organizer_row1b: 'Descripcion de los organizadores personales e individuales.'   
+    organizer_row2a: 'Organizador de Industria Airline'
+    organizer_row2b: 'Complete el Formulario W-4 para que su empleador pueda retener el impuesto sobre la renta federal correcta de su salario.'  
+    taxtools_row1a: 'Impuestos Debido fechas de publicación'
+    taxtools_row1b: 'Este enlace proporciona todas las fechas de vencimiento de IRS.'
+    taxtools_row2a: 'Realizar un seguimiento de sus impuestos'
+    taxtools_row2b: 'Realizar un seguimiento del estado de su devolución.'
+    taxtools_row3a: 'El pago del IRS'
+    taxtools_row3b: 'Los pagos pueden hacerse a través de sitio web del IRS.'
+    calculators: 'Uno de nuestros compañeros AMG Legado de Planificación ha reunido una lista de herramientas útiles para la planificación fiscal y financiera. Siéntase libre de utilizar esas calculadoras:'
+
+  about:
+    atitle: 'Acerca'
+    amain_p: 'Taxes inc. ha estado presente desde 1998 y brindando servicios profesionales a través de todos los estados de los EE.UU..
+       Estamos acreditados por el BBB y siempre emos tenido una excelente credibilidad; actualmente tenemos más de 1100 clientes activos y hemos servido a cientos más a través de los años.'
+  
+  testimonials:
+    ttitle: 'Testimonios'
+
+  payment:
+    payment_h2: 'Haga un Pago'
+    service_type_title: 'Tipo de Servicio'
+    payment: 'Pago'
+    select_one: 'Seleccione un Servicio'
+    corp_taxes: 'TAXES CORPORATIVO'
+    personal_taxes: 'TAXES PERSONAL'
+    accounting_services: 'CONTABILIDAD '
+    individual_forms: 'FORMULARIOS INDIVIDUALES'
+    full_name: 'Nombre'
+    phone_number: 'Teléfono '

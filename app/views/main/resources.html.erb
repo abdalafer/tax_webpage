@@ -1,0 +1,234 @@
+<% content_for :page_title do %>
+  <title>Taxes inc - Resources</title>
+<% end %>
+
+
+<section style="background-color:white;">
+    <div class="col-sm-12">
+      <h1><%= t('resources.rtitle')%></h1>
+    </div>
+
+
+  <div id="resource_tabs" class="container">
+    <ul  class="nav nav-pills">
+      <li class="active"><a href="#publications-link" data-toggle="tab"><%= t('resources.menur1')%></a>
+      </li>
+      <li><a href="#individual-tax-forms" data-toggle="tab"><%= t('resources.menur2')%></a>
+      </li>
+      <li><a href="#business-tax-forms" data-toggle="tab"><%= t('resources.menur3')%></a>
+      </li>
+      <li><a href="#organizers" data-toggle="tab"><%= t('resources.menur4')%></a>
+      </li>
+      <li><a href="#tax-tools" data-toggle="tab"><%= t('resources.menur5')%></a>
+      </li>
+      <li><a href="#tax-calculators" data-toggle="tab"><%= t('resources.menur6')%></a>
+      </li>
+    </ul>
+
+    <div class="tab-content clearfix">
+      <div class="tab-pane active" id="publications-link">
+        <div class="content-header">
+            <h3><%= t('resources.menur1')%></h3>
+        </div>
+        <%= render partial: t('resources.publications_view_path') %>      
+      </div>
+      <div class="tab-pane" id="individual-tax-forms">
+        <div class="content-header">
+            <h3><%= t('resources.menur2')%></h3>
+        </div>
+        <%= render partial: t('resources.individual_tax_form_view_path') %>  
+        
+      </div>
+      <div class="tab-pane" id="business-tax-forms">
+        <div class="content-header">
+            <h3><%= t('resources.menur3')%></h3>
+        </div>
+        <div>
+        <%= render partial: t('resources.busines_tax_form_view_path') %>
+          
+        </div>
+      </div>
+      <div class="tab-pane" id="organizers">
+        <div class="content-header">
+            <h3><%= t('resources.menur4')%></h3>
+        </div>
+        <div>
+            <table>
+              <tbody>
+              <tr>
+                <td >
+                  <p>
+                    <a target="_blank" href="/downloads/tax_organizer.pdf" ><b><%= t('resources.organizer_row1a')%></b></a>
+
+                  </p>
+                </td>
+                <td >
+                  <p><%= t('resources.organizer_row1b')%></p>
+                </td>
+              </tr>
+
+              <tr>
+                <td >
+                  <a target="_blank" href="/downloads/AirlineOrganizer.pdf" ><b><%= t('resources.organizer_row2a')%></b></a>
+                </td>
+                <td >
+                  <p><%= t('resources.organizer_row2b')%><br>
+                </td>
+              </tr>
+
+              </tbody>
+            </table>
+
+        </div>
+      </div>
+      <div class="tab-pane" id="tax-tools">
+        <div class="content-header">
+            <h3><%= t('resources.menur5')%></h3>
+        </div>
+        <div>
+            <table>
+              <tbody>
+              <tr>
+                <td >
+                  <p>
+                    <a target="_blank" href="https://www.irs.gov/publications/p509/ar02.html" ><b><%= t('resources.taxtools_row1a')%></b></a>
+                  </p>
+                </td>
+                <td >
+                  <p><%= t('resources.taxtools_row1b')%></p>
+                </td>
+              </tr>
+
+              <tr>
+                <td >
+                  <a target="_blank" href="https://www.irs.gov/refunds" ><b><%= t('resources.taxtools_row2a')%></b></a>
+                </td>
+                <td >
+                  <p><%= t('resources.taxtools_row2b')%><br>
+                </td>
+              </tr>
+
+              <tr>
+                <td >
+                  <a target="_blank" href="http://www.irs.gov/Payments" ><b><%= t('resources.taxtools_row3a')%></b></a>
+                </td>
+                <td >
+                  <p><%= t('resources.taxtools_row3b')%><br>
+                </td>
+              </tr>
+
+              </tbody>
+            </table>
+
+        </div>
+      </div>
+      <div class="tab-pane" id="tax-calculators">
+        <div class="content-header">
+          <h3><%= t('resources.menur6')%></h3>
+        </div>
+
+        <div class="col-sm-6" style="text-align:left;">
+          <h3>Home & Mortgage</h3>
+          <ul>
+            <li><a target="_blank" href="http://www.calcxml.com/do/hom01" onclick="return calc_window('http://www.calcxml.com/do/hom01')">How much home can I afford?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/hom02" onclick="return calc_window('http://www.calcxml.com/do/hom02')">Should I refinance my home mortgage (break even)?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/hom03" onclick="return calc_window('http://www.calcxml.com/do/hom03')">Mortgage calculator</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/hom04" onclick="return calc_window('http://www.calcxml.com/do/hom04')">Comparing mortgage terms (i.e. 15, 20, 30 year)</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/hom05" onclick="return calc_window('http://www.calcxml.com/do/hom05')">Should I pay discount points for A lower interest rate?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/hom06" onclick="return calc_window('http://www.calcxml.com/do/hom06')">Should I rent or buy a home?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/hom07" onclick="return calc_window('http://www.calcxml.com/do/hom07')">Should I convert to a bi-weekly payment schedule?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/hom08" onclick="return calc_window('http://www.calcxml.com/do/hom08')">Compare a 'no-cost' versus traditional mortgage</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/hom09" onclick="return calc_window('http://www.calcxml.com/do/hom09')">What are the tax savings generated by my mortgage?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/hom010" onclick="return calc_window('http://www.calcxml.com/do/hom10')">Which is better: fixed or adjustable-rate mortgage?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/hom011" onclick="return calc_window('http://www.calcxml.com/do/hom11')">Adjustable rate mortgage calculator</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/hom012" onclick="return calc_window('http://www.calcxml.com/do/hom12')">How do closing costs impact the interest rate?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/hom013" onclick="return calc_window('http://www.calcxml.com/do/hom13')">Compare an interest-only versus traditional mortgage</a></li>
+          </ul>
+
+
+        </div>
+
+        <div class="col-sm-6" style="text-align:left;">
+          <h3>Paycheck & Benefits</h3>
+          <ul>
+            <li><a target="_blank" href="http://www.calcxml.com/do/pay01" onclick="return calc_window('http://www.calcxml.com/do/pay01')">How much is my company bonus after taxes?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/pay02" onclick="return calc_window('http://www.calcxml.com/do/pay02')">How will payroll adjustments affect my take-home pay?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/pay03" onclick="return calc_window('http://www.calcxml.com/do/pay03')">Convert my salary to an equivalent hourly wage</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/pay04" onclick="return calc_window('http://www.calcxml.com/do/pay04')">Convert my hourly wage to an equivalent salary</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/pay05" onclick="return calc_window('http://www.calcxml.com/do/pay05')">Future value of my employee stock options?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/pay06" onclick="return calc_window('http://www.calcxml.com/do/pay06')">Exercise my "in-the-money" stock options?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/pay07" onclick="return calc_window('http://www.calcxml.com/do/pay07')">What may my 401(k) be worth?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/pay08" onclick="return calc_window('http://www.calcxml.com/do/pay08')">Impact of increasing my 401(k) contribution?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/pay09" onclick="return calc_window('http://www.calcxml.com/do/pay09')">What may my 457 Plan be worth?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/pay010" onclick="return calc_window('http://www.calcxml.com/do/pay10')">Impact of increasing my 457 Plan contribution?</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6" style="text-align:left;">
+          <h3>Taxes</h3>
+          <ul>
+            <li><a target="_blank" href="http://www.calcxml.com/do/inc01" onclick="return calc_window('http://www.calcxml.com/do/inc01')">What is my potential estate tax liability?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/inc02" onclick="return calc_window('http://www.calcxml.com/do/inc02')">Federal income tax estimator</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/inc03" onclick="return calc_window('http://www.calcxml.com/do/inc03')">Should I adjust my payroll withholdings?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/inc04" onclick="return calc_window('http://www.calcxml.com/do/inc04')">Will my investment interest be deductible?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/inc05" onclick="return calc_window('http://www.calcxml.com/do/inc05')">How much self-employment tax will I pay?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/inc06" onclick="return calc_window('http://www.calcxml.com/do/inc06')">Capital gains (and losses) tax estimator</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/inc07" onclick="return calc_window('http://www.calcxml.com/do/inc07')">Compare taxable, tax-deferred, and tax-free growth</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/inc08" onclick="return calc_window('http://www.calcxml.com/do/inc08')">How much of my social security benefit may be taxable?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/inc09" onclick="return calc_window('http://www.calcxml.com/do/inc09')">Tax implications of paying interest?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/inc010" onclick="return calc_window('http://www.calcxml.com/do/inc10')">Itemize or take the standard deduction?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/inc011" onclick="return calc_window('http://www.calcxml.com/do/inc11')">What is my taxable-equivalent yield?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/inc012" onclick="return calc_window('http://www.calcxml.com/do/inc12')">Tax refund estimator</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6" style="text-align:left;">
+          <h3>Credit</h3>
+          <ul>
+            <li><a target="_blank" href="http://www.calcxml.com/do/det01" onclick="return calc_window('http://www.calcxml.com/do/det01')">How long will it take to pay off my credit card?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/det02" onclick="return calc_window('http://www.calcxml.com/do/det02')">How long until my loan is paid off?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/det03" onclick="return calc_window('http://www.calcxml.com/do/det03')">What are my loan payments?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/det05" onclick="return calc_window('http://www.calcxml.com/do/det05')">What is the balance owing on my loan?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/det06" onclick="return calc_window('http://www.calcxml.com/do/det06')">Consolidate my personal debt?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/det07" onclick="return calc_window('http://www.calcxml.com/do/det07')">Re-structuring debts for accelerated payoff</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/det08" onclick="return calc_window('http://www.calcxml.com/do/det08')">Cash up front or payments over time?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/det09" onclick="return calc_window('http://www.calcxml.com/do/det09')">Impact of making extra debt payments?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/det010" onclick="return calc_window('http://www.calcxml.com/do/det10')">Pay off debts or invest the money?</a></li>
+            <li><a target="_blank" href="http://www.calcxml.com/do/det012" onclick="return calc_window('http://www.calcxml.com/do/det12')">Estimate my credit score</a></li>
+          </ul>
+        </div>
+       <div class="col-sm-6" style="text-align:left;">
+          <h3>Savings</h3>
+         <ul>
+           <li><a target="_blank" href="http://www.calcxml.com/do/sav01" onclick="return calc_window('http://www.calcxml.com/do/sav01')">Becoming a millionaire</a></li>
+           <li><a target="_blank" href="http://www.calcxml.com/do/sav02" onclick="return calc_window('http://www.calcxml.com/do/sav02')">Income generated by a savings plan</a></li>
+           <li><a target="_blank" href="http://www.calcxml.com/do/sav03" onclick="return calc_window('http://www.calcxml.com/do/sav03')">How long will it take to double my money?</a></li>
+           <li><a target="_blank" href="http://www.calcxml.com/do/sav04" onclick="return calc_window('http://www.calcxml.com/do/sav04')">How long until my savings reach my goal?</a></li>
+           <li><a target="_blank" href="http://www.calcxml.com/do/sav05" onclick="return calc_window('http://www.calcxml.com/do/sav05')">Save now vs. save later</a></li>
+           <li><a target="_blank" href="http://www.calcxml.com/do/sav06" onclick="return calc_window('http://www.calcxml.com/do/sav06')">How much should I save to reach my goal?</a></li>
+           <li><a target="_blank" href="http://www.calcxml.com/do/sav07" onclick="return calc_window('http://www.calcxml.com/do/sav07')">What will my current savings grow to?</a></li>
+           <li><a target="_blank" href="http://www.calcxml.com/do/sav08" onclick="return calc_window('http://www.calcxml.com/do/sav08')">Calculate rate of return</a></li>
+           <li><a target="_blank" href="http://www.calcxml.com/do/sav09" onclick="return calc_window('http://www.calcxml.com/do/sav09')">How do taxes and inflation impact my return?</a></li>
+           <li><a target="_blank" href="http://www.calcxml.com/do/sav010" onclick="return calc_window('http://www.calcxml.com/do/sav10')">What is my effective annual yield?</a></li>
+         </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<script>
+    function calc_window(url) {
+
+        newwindow = window.open(url,'name','toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=1,width=624,height=551,left = 650,top = 255');
+
+        if (window.focus) {
+            newwindow.focus()
+        }
+
+        return false;
+}</script>
+
+
